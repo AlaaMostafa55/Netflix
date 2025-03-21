@@ -1,0 +1,370 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}
+
+
+ .header {
+    display: block;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.005), rgba(0, 0, 0, 0.9)),
+    url(../Imges/header-image.png);
+height: 100vh;
+margin: 0;
+    
+}
+
+.logo {
+    width: 150px;
+    margin-top:30px;
+    margin-right: 120px;
+    display:inline;
+}
+
+.lang-button{
+    background-color:transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border: none;
+    margin-right: 900px;
+    width: 110px;
+    height: 40px;
+    display:inline;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px; 
+}
+
+.sign-in {
+    background-color: #e50914;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    width: 110px;
+    height: 40px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 15px; 
+    cursor: pointer;
+} 
+
+
+.lang-button:hover {
+    background-color: #fff; 
+    color: #000; 
+}
+
+.sign-in:hover {
+    background-color: #f40612; 
+    transform: scale(1.05); 
+}
+
+.sign-in:active {
+    transform: scale(0.97); 
+}
+
+.welcom {
+    text-align: center;
+    height: 600px;
+
+}
+.welcom-content{
+    padding: 80px;
+}
+
+.welcom-content h1 {
+    font-size:50px;
+    text-align: center;
+}
+
+.welcom-content h3 {
+    
+    text-align: center;
+}
+
+#email-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#email {
+    padding: 20px;
+    width: 350px;
+    background-color: #1a1815;
+    margin-left: 10px;
+    border-radius: 5px;
+    border-color: #1a1815;
+    color: #fff;
+}
+
+.get-started {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: #e50914; 
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    border: none; 
+    border-radius: 5px; 
+    padding-left:  20px; 
+
+    text-transform: uppercase; 
+    cursor: pointer;
+    width: 200px; }
+
+
+.get-started img {
+    margin-left: 6px;
+}
+
+.get-started:hover {
+    background-color: #f40612; 
+    transform: scale(1.05); 
+}
+
+.trending {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.trending h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-left: 60px;
+}
+
+.movie-slider {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto; 
+    padding: 10px 0;
+}
+
+.movie {
+    flex: 0 0 auto; 
+    width: 150px;
+    text-align: center;
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movie span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.trending {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.trending h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.movie-slider {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    width: 1300px;
+    align-self:center;
+    align-items: center;
+    
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 200px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    padding-left: 40px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.card span {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+.movie-slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+.slider-controls {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.prev-btn, .next-btn {
+    background-color:transparent;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+  
+}
+.modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.modal-content img {
+    width: 60%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.modal-content h3 {
+    margin: 10px 0;
+}
+
+.modal-content p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    background: none;
+    border: none;
+}
+.features {
+    display:inline-block;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #070707;
+}
+
+
+.feature {
+    text-align:center;
+    width:350px;
+    height: 250px;
+    background: linear-gradient(to bottom right, #1a2144, #341a3a); 
+    display: inline-block;
+    margin-right: 10PX;
+    margin-top:20px;
+    border-radius: 20PX;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.faq-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .faq-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .faq-item {
+   border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-top: 15px;
+    font-size: 30px;
+    background-color: #2d2d2d;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 25px;
+    
+  }
+  .faq-item:hover{
+    background-color: #3f3f3f ;
+  }
+  .toggle-icon {
+    font-size: 30px;
+    color:#ccc;
+    margin-right: 10px;
+  }
+  
+  .faq-answer {
+    display: none;
+    padding: 10px 0;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #ccc;
+  }
+
+
+  .contanerp{
+    width: 245px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 50px;
+}

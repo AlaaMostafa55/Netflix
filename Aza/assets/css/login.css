@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.005), rgba(0, 0, 0, 0.9)),
+    url(../imgs/netflex.png);
+  font-family: Arial, sans-serif;
+}
+
+
+.login-container {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 30px 40px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 48px;
+  color: #e50914;
+  margin: 0;
+  font-weight: bold;
+  transform: rotate(-5deg);
+  letter-spacing: 5px;
+}
+
+.login-container h2 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.login-container span {
+  display: none;
+  color: #e10b0b;
+  font-size: 12px;
+  padding: 10px 10px 10px 10px;
+}
+
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+
+.login-container button.login-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e50914;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.login-container button:hover {
+  background-color: #b2070d;
+}
+
+.login-container button.register-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+
+  background-color: transparent;
+
+  color: #f3ebeb;
+}
+
+.signup-text {
+  color: white;
+}
+
+.signup-text a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}

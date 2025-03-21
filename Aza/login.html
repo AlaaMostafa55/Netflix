@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/login.css">
+    <title>Netflix Login</title>
+  </head>
+  <body>
+   
+    <h1 style="color: red; font-size: 48px;">Netflix</h1>
+    
+    <div class="login-container">
+      <h2>Login</h2>
+      <form id="form" action="../Alaa/home.html" method="get">
+        <input type="text" id="email" required />
+        <span id="email_e"> This Account not Existe</span>
+        <input type="password" id="password" required />
+        <span id="pass_e"> Wronge password</span>
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+      <span style="color: white;">OR</span>
+      <a href="register.html">
+        <button type="button" class="register-btn">Register</button>
+      </a>
+      <p class="signup-text">
+        New to Netflix? <a href="register.html">Sign up now.</a>
+      </p>
+    </div>
+    <script src="./java/login.js"></script>
+  </body>
+</html>
